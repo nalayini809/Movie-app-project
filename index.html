@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Search & Play</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ 
+  <div id="splashScreen">
+    <img src="movies.jpg" alt="Movie Search Logo" id="splashLogo">
+  </div>
+
+      <img src="logo.png" alt="Movie Search Logo" id="logo" style="display: none;">
+    
+    
+    <h1>Movie Search and Play</h1>
+    <div id="searchBox">
+      <input type="text" id="movieSearch" placeholder="Search for a movie">
+      <button onclick="searchMovie()">Search</button>
+    </div>
+    
+    <div id="movieResults"></div>
+    
+    <div id="movieDetails">
+      <h2>Movie Details</h2>
+      <div id="movieInfo"></div>
+      
+      <button onclick="playMovie()">Play Movie</button>
+      <video id="moviePlayer" width="600" controls style="display: none;">
+        <source id="movieSource" type="video/mp4">
+        <source src="Aaragan_2024_Tamil_Full_Movie_480p_HQ_PreDVD_(isaimini.eu).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    
+    <footer>
+      <p>Movie Search and Play App &copy; 2024</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

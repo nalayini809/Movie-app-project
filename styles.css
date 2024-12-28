@@ -1,0 +1,97 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url(https://thumbs.dreamstime.com/b/film-movie-background-clapperboard-film-reels-theater-93238907.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+#splashScreen {
+    background-color: #000; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    color: #fff;
+
+    
+}
+#splashLogo {
+    width: 1000px;
+    animation: zoomIn 3s ease-out forwards;
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+h1 {
+    color: #333;
+    margin-top: 30px;
+}
+
+#searchBox {
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#movieResults {
+    margin-top: 20px;
+}
+.movieItem {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+#movieDetails {
+    margin-top: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    display: none; 
+    text-align: left;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#movieDetails img {
+    max-width: 150px;
+    margin-right: 20px;
+}
+
+footer {
+    margin-top: 50px;
+    color: #070101;
+    font-size: 14px;
+}
